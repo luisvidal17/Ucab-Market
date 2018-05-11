@@ -20,5 +20,6 @@ public class MainActivity extends AppCompatActivity {
         Log.d (LOG_TAG, "Button clicked!");
         Intent intent = new Intent (this, SecondActivity.class);
         startActivity (intent);
+        tgtg
     }
 }
