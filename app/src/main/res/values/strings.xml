@@ -2,5 +2,25 @@
     <string name="app_name">Ucab Market</string>
     <string name="agregar_articulo">Agregar Articulo</string>
     <string name="Second_Activity">Articulos</string>
+    <string name="arroz">Arroz</string>
+    <string name="pasta">Pasta</string>
+    <string name="leche">Leche</string>
+    <string name="jugo">Jugo</string>
+    <string name="agua">Agua</string>
+    <string name="caraota">Caraota</string>
+    <string name="ajo">ajo</string>
+    <string name="ace">ace</string>
+    <string name="pollo">Pollo</string>
+    <string name="carne">Carne</string>
+    <string name="pescado">Pescado</string>
+    <string name="sal">Sal</string>
+    <string name="azucar">Azucar</string>
+    <string name="pan">Pan</string>
+    <string name="jamon">Jamon</string>
+    <string name="queso">Queso</string>
+    <string name="lenteja">Lenteja</string>
+    <string name="mostaza">mostaza</string>
+    <string name="mayonesa">mayonesa</string>
+    <string name="harina">Harina</string>
 
 </resources>

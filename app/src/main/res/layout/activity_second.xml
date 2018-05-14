@@ -8,164 +8,162 @@
 
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button_arroz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:text="Arroz" />
+        android:text="@string/arroz" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/button_pasta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/button4"
-        android:text="Pasta" />
+        android:layout_below="@+id/button_arroz"
+        android:text="@string/pasta" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/button_leche"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/button5"
-        android:text="Leche" />
+        android:layout_below="@+id/button_pasta"
+        android:text="@string/leche" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/button_jugo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/button6"
-        android:text="Jugo" />
+        android:layout_below="@+id/button_leche"
+        android:text="@string/jugo" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/button_agua"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/button7"
-        android:text="Agua" />
+        android:layout_below="@+id/button_jugo"
+        android:text="@string/agua" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/button_caraota"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/button8"
-        android:text="Caraota" />
+        android:layout_below="@+id/button_jugo"
+        android:layout_toEndOf="@+id/button_mostaza"
+        android:text="@string/caraota" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/button_ajo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/button9"
-        android:text="mantequilla" />
+        android:layout_alignStart="@+id/button_caraota"
+        android:layout_below="@+id/button_arroz"
+        android:text="@string/ajo" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/button_ace"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/button10"
-        android:text="ace" />
+        android:layout_alignStart="@+id/button_pollo"
+        android:layout_below="@+id/button_leche"
+        android:text="@string/ace" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/button_pollo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/button11"
-        android:text="Pollo" />
+        android:layout_alignStart="@+id/button_carne"
+        android:layout_below="@+id/button_pasta"
+        android:text="@string/pollo" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/button_carne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/button12"
-        android:text="Carne" />
+        android:layout_alignStart="@+id/button_harina"
+        android:layout_below="@+id/button_arroz"
+        android:text="@string/carne" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/button_pescado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="134dp"
-        android:text="Pescado" />
+        android:layout_toEndOf="@+id/button_arroz"
+        android:text="@string/pescado" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/button_sal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button14"
-        android:layout_below="@+id/button4"
-        android:text="Sal" />
+        android:layout_below="@+id/button_arroz"
+        android:layout_toEndOf="@+id/button_arroz"
+        android:text="@string/sal" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/button_azucar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button14"
-        android:layout_below="@+id/button5"
-        android:text="Azucar" />
+        android:layout_alignStart="@+id/button_pescado"
+        android:layout_below="@+id/button_pasta"
+        android:text="@string/azucar" />
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/button_pan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button14"
-        android:layout_below="@+id/button6"
-        android:text="Pan" />
+        android:layout_alignStart="@+id/button_pescado"
+        android:layout_below="@+id/button_leche"
+        android:text="@string/pan" />
 
     <Button
-        android:id="@+id/button18"
+        android:id="@+id/button_jamon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button14"
+        android:layout_below="@+id/button_jugo"
+        android:layout_toEndOf="@+id/button_arroz"
+        android:text="@string/jamon" />
+
+    <Button
+        android:id="@+id/button_queso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_ajo"
+        android:layout_below="@+id/button_leche"
+        android:text="@string/queso" />
+
+    <Button
+        android:id="@+id/button_lenteja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_ajo"
+        android:layout_below="@+id/button_pasta"
+        android:text="@string/lenteja" />
+
+    <Button
+        android:id="@+id/button_mostaza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button_ace"
+        android:layout_below="@+id/button_jugo"
+        android:text="@string/mostaza" />
+
+    <Button
+        android:id="@+id/button_mayonesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="199dp"
-        android:text="Jamon" />
+        android:layout_toEndOf="@+id/button_ace"
+        android:text="@string/mayonesa" />
 
     <Button
-        android:id="@+id/button19"
+        android:id="@+id/button_harina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button14"
-        android:layout_below="@+id/button18"
-        android:text="Queso" />
-
-    <Button
-        android:id="@+id/button20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button14"
-        android:layout_below="@+id/button9"
-        android:text="Lenteja" />
-
-    <Button
-        android:id="@+id/button21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button14"
-        android:layout_below="@+id/button10"
-        android:text="mostaza" />
-
-    <Button
-        android:id="@+id/button22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button14"
-        android:layout_below="@+id/button11"
-        android:text="mayonesa" />
-
-    <Button
-        android:id="@+id/button23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button14"
-        android:layout_below="@+id/button12"
-        android:text="Harina" />
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/button_pescado"
+        android:text="@string/harina" />
 </RelativeLayout>
