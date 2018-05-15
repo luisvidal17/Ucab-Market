@@ -20,7 +20,29 @@
     <string name="queso">Queso</string>
     <string name="lenteja">Lenteja</string>
     <string name="mostaza">mostaza</string>
-    <string name="mayonesa">mayonesa</string>
+    <string name="vino">vino</string>
     <string name="harina">Harina</string>
+    <string name="compra_1">Agregue articulo...</string>
+    <string name="compra_2">Agregue articulo...</string>
+    <string name="compra_3">Agregue articulo...</string>
+    <string name="compra_4">Agregue articulo...</string>
+    <string name="compra_5">Agregue articulo...</string>
+    <string name="compra_6">Agregue articulo...</string>
+    <string name="compra_7">Agregue articulo...</string>
+    <string name="compra_8">Agregue articulo...</string>
+    <string name="compra_9">Agregue articulo...</string>
+    <string name="compra_10">Agregue articulo...</string>
+    <string name="compra_11">Agregue articulo...</string>
+    <string name="compra_12">Agregue articulo...</string>
+    <string name="compra_13">Agregue articulo...</string>
+    <string name="compra_14">Agregue articulo...</string>
+    <string name="compra_15">Agregue articulo...</string>
+    <string name="compra_16">Agregue articulo...</string>
+    <string name="compra_17">Agregue articulo...</string>
+    <string name="compra_18">Agregue articulo...</string>
+    <string name="compra_19">Agregue articulo...</string>
+    <string name="compra_20">Agregue articulo...</string>
+
+
 
 </resources>

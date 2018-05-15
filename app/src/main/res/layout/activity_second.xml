@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:text="@string/arroz" />
+        android:text="@string/arroz"
+        android:onClick="returnReply"/>
 
     <Button
         android:id="@+id/button_pasta"
@@ -21,7 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/button_arroz"
-        android:text="@string/pasta" />
+        android:text="@string/pasta"
+        android:onClick="returnReply"/>
 
     <Button
         android:id="@+id/button_leche"
@@ -29,7 +31,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/button_pasta"
-        android:text="@string/leche" />
+        android:text="@string/leche"
+        android:onClick="returnReply"/>
 
     <Button
         android:id="@+id/button_jugo"
@@ -37,7 +40,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/button_leche"
-        android:text="@string/jugo" />
+        android:text="@string/jugo"
+        android:onClick="returnReply"/>
 
     <Button
         android:id="@+id/button_agua"
@@ -45,7 +49,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/button_jugo"
-        android:text="@string/agua" />
+        android:text="@string/agua"
+        android:onClick="returnReply"/>
 
     <Button
         android:id="@+id/button_caraota"
@@ -53,7 +58,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_jugo"
         android:layout_toEndOf="@+id/button_mostaza"
-        android:text="@string/caraota" />
+        android:text="@string/caraota"
+        android:onClick="returnReply"/>
 
     <Button
         android:id="@+id/button_ajo"
@@ -61,7 +67,8 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/button_caraota"
         android:layout_below="@+id/button_arroz"
-        android:text="@string/ajo" />
+        android:text="@string/ajo"
+        android:onClick="returnReply"/>
 
     <Button
         android:id="@+id/button_ace"
@@ -69,7 +76,8 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/button_pollo"
         android:layout_below="@+id/button_leche"
-        android:text="@string/ace" />
+        android:text="@string/ace"
+        android:onClick="returnReply"/>
 
     <Button
         android:id="@+id/button_pollo"
@@ -77,7 +85,8 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/button_carne"
         android:layout_below="@+id/button_pasta"
-        android:text="@string/pollo" />
+        android:text="@string/pollo"
+        android:onClick="returnReply"/>
 
     <Button
         android:id="@+id/button_carne"
@@ -85,7 +94,8 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/button_harina"
         android:layout_below="@+id/button_arroz"
-        android:text="@string/carne" />
+        android:text="@string/carne"
+        android:onClick="returnReply"/>
 
     <Button
         android:id="@+id/button_pescado"
@@ -93,7 +103,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/button_arroz"
-        android:text="@string/pescado" />
+        android:text="@string/pescado"
+        android:onClick="returnReply"/>
 
     <Button
         android:id="@+id/button_sal"
@@ -101,7 +112,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_arroz"
         android:layout_toEndOf="@+id/button_arroz"
-        android:text="@string/sal" />
+        android:text="@string/sal"
+        android:onClick="returnReply"/>
 
     <Button
         android:id="@+id/button_azucar"
@@ -109,7 +121,8 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/button_pescado"
         android:layout_below="@+id/button_pasta"
-        android:text="@string/azucar" />
+        android:text="@string/azucar"
+        android:onClick="returnReply"/>
 
     <Button
         android:id="@+id/button_pan"
@@ -117,7 +130,8 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/button_pescado"
         android:layout_below="@+id/button_leche"
-        android:text="@string/pan" />
+        android:text="@string/pan"
+        android:onClick="returnReply"/>
 
     <Button
         android:id="@+id/button_jamon"
@@ -125,7 +139,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_jugo"
         android:layout_toEndOf="@+id/button_arroz"
-        android:text="@string/jamon" />
+        android:text="@string/jamon"
+        android:onClick="returnReply"/>
 
     <Button
         android:id="@+id/button_queso"
@@ -133,7 +148,8 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/button_ajo"
         android:layout_below="@+id/button_leche"
-        android:text="@string/queso" />
+        android:text="@string/queso"
+        android:onClick="returnReply"/>
 
     <Button
         android:id="@+id/button_lenteja"
@@ -141,7 +157,8 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/button_ajo"
         android:layout_below="@+id/button_pasta"
-        android:text="@string/lenteja" />
+        android:text="@string/lenteja"
+        android:onClick="returnReply"/>
 
     <Button
         android:id="@+id/button_mostaza"
@@ -149,7 +166,8 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/button_ace"
         android:layout_below="@+id/button_jugo"
-        android:text="@string/mostaza" />
+        android:text="@string/mostaza"
+        android:onClick="returnReply"/>
 
     <Button
         android:id="@+id/button_mayonesa"
@@ -157,7 +175,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/button_ace"
-        android:text="@string/mayonesa" />
+        android:text="@string/vino"
+        android:onClick="returnReply"/>
 
     <Button
         android:id="@+id/button_harina"
@@ -165,5 +184,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/button_pescado"
-        android:text="@string/harina" />
+        android:text="@string/harina"
+        android:onClick="returnReply"/>
+
 </RelativeLayout>
