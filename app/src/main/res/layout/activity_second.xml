@@ -16,23 +16,26 @@
         android:layout_height="wrap_content">
 
 
-    <Button
-        android:id="@+id/comprar_arroz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/arroz"
-        android:text="@string/comprar_arroz"
-        android:onClick="click_arroz"/>
+        <Button
+            android:id="@+id/comprar_arroz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/arroz"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="click_arroz"
+            android:text="@string/comprar_arroz" />
 
-    <TextView
-        android:id="@+id/arroz"
-        android:layout_width="86dp"
-        android:layout_height="48dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:text="@string/arroz"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+        <TextView
+            android:id="@+id/arroz"
+            android:layout_width="86dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/arroz"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/comprar_pasta"
@@ -40,8 +43,9 @@
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/comprar_arroz"
             android:layout_below="@+id/comprar_arroz"
-            android:text="@string/comprar_pasta"
-            android:onClick="click_pasta"/>
+            android:background="@android:color/holo_orange_dark"
+            android:onClick="click_pasta"
+            android:text="@string/comprar_pasta" />
 
         <TextView
             android:id="@+id/pasta"
@@ -50,16 +54,19 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/comprar_arroz"
             android:text="@string/pasta"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="italic" />
 
         <Button
-            android:id="@+id/leche"
+            android:id="@+id/comprar_leche"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/comprar_arroz"
             android:layout_below="@+id/comprar_pasta"
-            android:text="@string/comprar_leche"
-            android:onClick="click_leche"/>
+            android:background="@android:color/holo_red_light"
+            android:onClick="click_leche"
+            android:text="@string/comprar_leche" />
 
         <TextView
             android:id="@+id/leche"
@@ -68,25 +75,30 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/comprar_pasta"
             android:text="@string/leche"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/comprar_jugo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/comprar_arroz"
-            android:layout_below="@+id/leche"
-            android:text="@string/comprar_jugo"
-            android:onClick="click_jugo"/>
+            android:layout_below="@+id/comprar_leche"
+            android:background="@android:color/holo_purple"
+            android:onClick="click_jugo"
+            android:text="@string/comprar_jugo" />
 
         <TextView
             android:id="@+id/jugo"
             android:layout_width="86dp"
             android:layout_height="48dp"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/leche"
+            android:layout_below="@+id/comprar_leche"
             android:text="@string/jugo"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_purple"
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/comprar_agua"
@@ -94,17 +106,20 @@
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/comprar_arroz"
             android:layout_below="@+id/comprar_jugo"
-            android:text="@string/comprar_agua"
-            android:onClick="click_agua"/>
+            android:background="@android:color/holo_green_light"
+            android:onClick="click_agua"
+            android:text="@string/comprar_agua" />
 
-    <TextView
-        android:id="@+id/agua"
-        android:layout_width="85dp"
-        android:layout_height="46dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/comprar_jugo"
-        android:text="@string/agua"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+        <TextView
+            android:id="@+id/agua"
+            android:layout_width="85dp"
+            android:layout_height="46dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/comprar_jugo"
+            android:text="@string/agua"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_green_light"
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/comprar_caraota"
@@ -112,8 +127,9 @@
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/comprar_arroz"
             android:layout_below="@+id/comprar_agua"
-            android:text="@string/comprar_caraota"
-            android:onClick="click_caraota"/>
+            android:background="@android:color/holo_red_dark"
+            android:onClick="click_caraota"
+            android:text="@string/comprar_caraota" />
 
         <TextView
             android:id="@+id/caraota"
@@ -122,7 +138,9 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/comprar_agua"
             android:text="@string/caraota"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/comprar_ajo"
@@ -130,8 +148,9 @@
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/comprar_arroz"
             android:layout_below="@+id/comprar_caraota"
-            android:text="@string/comprar_ajo"
-            android:onClick="click_ajo"/>
+            android:background="@android:color/holo_blue_bright"
+            android:onClick="click_ajo"
+            android:text="@string/comprar_ajo" />
 
         <TextView
             android:id="@+id/ajo"
@@ -140,7 +159,9 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/comprar_caraota"
             android:text="@string/ajo"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/comprar_harina"
@@ -148,8 +169,9 @@
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/comprar_arroz"
             android:layout_below="@+id/comprar_ajo"
-            android:text="@string/comprar_harina"
-            android:onClick="click_harina"/>
+            android:background="@android:color/darker_gray"
+            android:onClick="click_harina"
+            android:text="@string/comprar_harina" />
 
         <TextView
             android:id="@+id/ace"
@@ -159,7 +181,9 @@
             android:layout_alignParentStart="true"
             android:layout_marginBottom="128dp"
             android:text="@string/ace"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/comprar_pollo"
@@ -167,8 +191,9 @@
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/comprar_arroz"
             android:layout_below="@+id/comprar_harina"
-            android:text="@string/comprar_pollo"
-            android:onClick="click_pollo"/>
+            android:background="@android:color/holo_blue_light"
+            android:onClick="click_pollo"
+            android:text="@string/comprar_pollo" />
 
         <TextView
             android:id="@+id/pollo"
@@ -177,7 +202,9 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/comprar_harina"
             android:text="@string/pollo"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_blue_light"
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/comprar_ace"
@@ -185,8 +212,9 @@
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/comprar_arroz"
             android:layout_below="@+id/comprar_pollo"
-            android:text="@string/comprar_ace"
-            android:onClick="click_ace"/>
+            android:background="@android:color/holo_orange_dark"
+            android:onClick="click_ace"
+            android:text="@string/comprar_ace" />
 
         <TextView
             android:id="@+id/carne"
@@ -195,26 +223,31 @@
             android:layout_alignStart="@+id/pescado"
             android:layout_below="@+id/comprar_pollo"
             android:text="@string/carne"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="italic" />
 
-    <TextView
-        android:id="@+id/pescado"
-        android:layout_width="81dp"
-        android:layout_height="45dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="89dp"
-        android:text="@string/pescado"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+        <TextView
+            android:id="@+id/pescado"
+            android:layout_width="81dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="89dp"
+            android:text="@string/pescado"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/comprar_pan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_below="@+id/leche"
-            android:text="@string/comprar_pan"
-            android:onClick="click_pan"/>
+            android:layout_below="@+id/comprar_leche"
+            android:background="@android:color/darker_gray"
+            android:onClick="click_pan"
+            android:text="@string/comprar_pan" />
 
         <Button
             android:id="@+id/comprar_sal"
@@ -222,8 +255,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_below="@+id/comprar_arroz"
-            android:text="@string/comprar_sal"
-            android:onClick="click_sal"/>
+            android:background="@android:color/holo_red_dark"
+            android:onClick="click_sal"
+            android:text="@string/comprar_sal" />
 
         <TextView
             android:id="@+id/sal"
@@ -232,7 +266,9 @@
             android:layout_alignEnd="@+id/pescado"
             android:layout_below="@+id/comprar_arroz"
             android:text="@string/sal"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/comprar_azucar"
@@ -240,8 +276,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_below="@+id/comprar_pasta"
-            android:text="@string/comprar_azucar"
-            android:onClick="click_azucar"/>
+            android:background="@android:color/holo_blue_bright"
+            android:onClick="click_azucar"
+            android:text="@string/comprar_azucar" />
 
         <TextView
             android:id="@+id/azucar"
@@ -250,7 +287,9 @@
             android:layout_alignEnd="@+id/pescado"
             android:layout_below="@+id/comprar_pasta"
             android:text="@string/azucar"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/comprar_pescado"
@@ -258,17 +297,20 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:text="@string/comprar_pescado"
-            android:onClick="click_pescado"/>
+            android:background="@android:color/holo_green_dark"
+            android:onClick="click_pescado"
+            android:text="@string/comprar_pescado" />
 
         <TextView
             android:id="@+id/pan"
             android:layout_width="83dp"
             android:layout_height="45dp"
             android:layout_alignStart="@+id/pescado"
-            android:layout_below="@+id/leche"
+            android:layout_below="@+id/comprar_leche"
             android:text="@string/pan"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/comprar_jamon"
@@ -276,8 +318,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_below="@+id/comprar_jugo"
-            android:text="@string/comprar_jamon"
-            android:onClick="click_jamon"/>
+            android:background="@android:color/holo_blue_light"
+            android:onClick="click_jamon"
+            android:text="@string/comprar_jamon" />
 
         <TextView
             android:id="@+id/jamon"
@@ -286,7 +329,9 @@
             android:layout_alignBottom="@+id/comprar_agua"
             android:layout_alignStart="@+id/pescado"
             android:text="@string/jamon"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_blue_light"
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/comprar_lenteja"
@@ -294,8 +339,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_below="@+id/comprar_harina"
-            android:text="@string/comprar_lenteja"
-            android:onClick="click_lenteja"/>
+            android:background="@android:color/holo_green_dark"
+            android:onClick="click_lenteja"
+            android:text="@string/comprar_lenteja" />
 
         <TextView
             android:id="@+id/queso"
@@ -304,7 +350,9 @@
             android:layout_alignStart="@+id/pescado"
             android:layout_below="@+id/agua"
             android:text="@string/queso"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/comprar_mostaza"
@@ -312,8 +360,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_below="@+id/comprar_ajo"
-            android:text="@string/comprar_mostaza"
-            android:onClick="click_mostaza"/>
+            android:background="@android:color/holo_purple"
+            android:onClick="click_mostaza"
+            android:text="@string/comprar_mostaza" />
 
         <TextView
             android:id="@+id/lenteja"
@@ -322,7 +371,9 @@
             android:layout_alignStart="@+id/carne"
             android:layout_below="@+id/comprar_harina"
             android:text="@string/lenteja"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_green_light"
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/comprar_carne"
@@ -330,8 +381,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
-            android:text="@string/comprar_carne"
-            android:onClick="click_carne"/>
+            android:background="@android:color/holo_red_dark"
+            android:onClick="click_carne"
+            android:text="@string/comprar_carne" />
 
         <TextView
             android:id="@+id/mostaza"
@@ -340,7 +392,9 @@
             android:layout_alignBottom="@+id/comprar_harina"
             android:layout_alignStart="@+id/pescado"
             android:text="@string/mostaza"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_purple"
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/comprar_queso"
@@ -348,8 +402,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_below="@+id/comprar_agua"
-            android:text="@string/comprar_queso"
-            android:onClick="click_queso"/>
+            android:background="@android:color/holo_orange_dark"
+            android:onClick="click_queso"
+            android:text="@string/comprar_queso" />
 
         <TextView
             android:id="@+id/vino"
@@ -358,7 +413,9 @@
             android:layout_alignStart="@+id/pescado"
             android:layout_below="@+id/comprar_caraota"
             android:text="@string/vino"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="italic" />
 
         <Button
             android:id="@+id/comprar_vino"
@@ -366,8 +423,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_below="@+id/comprar_caraota"
-            android:text="@string/comprar_vino"
-            android:onClick="click_vino"/>
+            android:background="@android:color/holo_red_light"
+            android:onClick="click_vino"
+            android:text="@string/comprar_vino" />
 
         <TextView
             android:id="@+id/harina"
@@ -376,7 +434,9 @@
             android:layout_alignBottom="@+id/comprar_harina"
             android:layout_alignParentStart="true"
             android:text="@string/harina"
-            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="italic" />
 
     </RelativeLayout>
 </ScrollView>
