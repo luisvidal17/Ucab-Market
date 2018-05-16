@@ -42,7 +42,26 @@
     <string name="compra_18">Agregue articulo...</string>
     <string name="compra_19">Agregue articulo...</string>
     <string name="compra_20">Agregue articulo...</string>
-
+    <string name="comprar_arroz">Comprar</string>
+    <string name="comprar_pasta">Comprar</string>
+    <string name="comprar_leche">Comprar</string>
+    <string name="comprar_jugo">Comprar</string>
+    <string name="comprar_agua">Comprar</string>
+    <string name="comprar_caraota">Comprar</string>
+    <string name="comprar_ajo">Comprar</string>
+    <string name="comprar_harina">Comprar</string>
+    <string name="comprar_pollo">Comprar</string>
+    <string name="comprar_ace">Comprar</string>
+    <string name="comprar_pan">Comprar</string>
+    <string name="comprar_sal">comprar</string>
+    <string name="comprar_azucar">Comprar</string>
+    <string name="comprar_pescado">Comprar</string>
+    <string name="comprar_jamon">Comprar</string>
+    <string name="comprar_lenteja">Comprar</string>
+    <string name="comprar_mostaza">Comprar</string>
+    <string name="comprar_carne">Comprar</string>
+    <string name="comprar_queso">Comprar</string>
+    <string name="comprar_vino">Comprar</string>
 
 
 </resources>
