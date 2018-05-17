@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/compra_1"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="24sp"
+                android:textSize="10sp"
                 android:typeface="monospace" />
 
             <TextView
@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/compra_2"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="24sp"
+                android:textSize="10sp"
                 android:typeface="monospace" />
 
             <TextView
@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/compra_3"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="24sp"
+                android:textSize="10sp"
                 android:typeface="monospace" />
 
             <TextView
@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/compra_4"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="24sp"
+                android:textSize="10sp"
                 android:typeface="monospace" />
 
             <TextView
@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/compra_5"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="24sp"
+                android:textSize="10sp"
                 android:typeface="monospace" />
 
             <TextView
@@ -68,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/compra_6"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="24sp"
+                android:textSize="10sp"
                 android:typeface="monospace" />
 
             <TextView
@@ -77,7 +77,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/compra_7"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="24sp"
+                android:textSize="10sp"
                 android:typeface="monospace" />
 
             <TextView
@@ -86,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/compra_8"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="24sp"
+                android:textSize="10sp"
                 android:typeface="monospace" />
 
             <TextView
@@ -95,7 +95,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/compra_9"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="24sp"
+                android:textSize="10sp"
                 android:typeface="monospace" />
 
             <TextView
@@ -104,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/compra_10"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="24sp"
+                android:textSize="10sp"
                 android:typeface="monospace" />
 
             <TextView
@@ -113,7 +113,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/compra_11"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="24sp"
+                android:textSize="10sp"
                 android:typeface="monospace" />
 
             <TextView
@@ -122,7 +122,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/compra_12"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="24sp"
+                android:textSize="10sp"
                 android:typeface="monospace" />
 
             <TextView
@@ -131,7 +131,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/compra_13"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="24sp"
+                android:textSize="10sp"
                 android:typeface="monospace" />
 
             <TextView
@@ -140,7 +140,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/compra_14"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="24sp"
+                android:textSize="10sp"
                 android:typeface="monospace" />
 
             <TextView
@@ -149,7 +149,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/compra_15"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="24sp"
+                android:textSize="10sp"
                 android:typeface="monospace" />
 
             <TextView
@@ -158,7 +158,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/compra_16"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="24sp"
+                android:textSize="10sp"
                 android:typeface="monospace" />
 
             <TextView
@@ -167,7 +167,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/compra_17"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="24sp"
+                android:textSize="10sp"
                 android:typeface="monospace" />
 
             <TextView
@@ -176,7 +176,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/compra_18"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="24sp"
+                android:textSize="10sp"
                 android:typeface="monospace" />
 
             <TextView
@@ -185,7 +185,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/compra_19"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="24sp"
+                android:textSize="10sp"
                 android:typeface="monospace" />
 
             <TextView
@@ -194,7 +194,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/compra_20"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="24sp"
+                android:textSize="10sp"
                 android:typeface="monospace" />
 
             <Button
@@ -214,6 +214,6 @@
 
     </ScrollView>
 
-    
+
 
 </LinearLayout>

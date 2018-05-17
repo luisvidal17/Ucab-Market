@@ -11,7 +11,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
     public static final int TEXT_REQUEST = 1;
-    private int count = 1;
+    int count = 1;
+
 
     private TextView m1;
     private TextView m2;
@@ -60,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         m18 = (TextView) findViewById(R.id.textView18);
         m19 = (TextView) findViewById(R.id.textView19);
         m20 = (TextView) findViewById(R.id.textView20);
+
 
         if (savedInstanceState != null) {
 
@@ -126,12 +128,13 @@ public class MainActivity extends AppCompatActivity {
                 m20.setText(savedInstanceState.getString("reply_text20"));
                 m20.setVisibility(View.VISIBLE);
 
+                count= savedInstanceState.getInt("contador");
 
             }
         }
 
-
     }
+
 
     public void launchSecondActivity(View view) {
         Log.d (LOG_TAG, "Button clicked!");
@@ -146,6 +149,8 @@ public class MainActivity extends AppCompatActivity {
 
         if (requestCode == TEXT_REQUEST) {
             if (resultCode == RESULT_OK) {
+
+
 
                 if(count==1){
 
@@ -297,6 +302,10 @@ public class MainActivity extends AppCompatActivity {
         outState.putString("reply_text18", m18.getText().toString());
         outState.putString("reply_text19", m19.getText().toString());
         outState.putString("reply_text20", m20.getText().toString());
+        outState.putInt("contador" ,count);
+
+
+
 
 
 

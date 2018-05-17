@@ -11,8 +11,6 @@ public class SecondActivity extends AppCompatActivity {
     public static final String EXTRA_REPLY = "com.example.luisvidal.twoactivities.extra.REPLY";
 
 
-
-
     private TextView c_arroz;
     private TextView c_pasta;
     private TextView c_leche;
@@ -35,15 +33,10 @@ public class SecondActivity extends AppCompatActivity {
     private TextView c_vino;
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-
-
-
 
         c_arroz = (TextView) findViewById(R.id.arroz);
         c_pasta = (TextView) findViewById(R.id.pasta);
@@ -65,7 +58,6 @@ public class SecondActivity extends AppCompatActivity {
         c_carne = (TextView) findViewById(R.id.carne);
         c_queso = (TextView) findViewById(R.id.queso);
         c_vino= (TextView) findViewById(R.id.vino);
-
 
     }
 
@@ -96,7 +88,6 @@ public class SecondActivity extends AppCompatActivity {
         setResult(RESULT_OK,replyIntent);
         finish();
 
-
     }
 
     public void click_jugo(View view) {
@@ -105,7 +96,6 @@ public class SecondActivity extends AppCompatActivity {
         replyIntent.putExtra(EXTRA_REPLY, reply4);
         setResult(RESULT_OK,replyIntent);
         finish();
-
 
     }
 
@@ -116,7 +106,6 @@ public class SecondActivity extends AppCompatActivity {
         setResult(RESULT_OK,replyIntent);
         finish();
 
-
     }
 
     public void click_caraota(View view) {
@@ -126,7 +115,6 @@ public class SecondActivity extends AppCompatActivity {
         setResult(RESULT_OK,replyIntent);
         finish();
 
-
     }
 
     public void click_ajo(View view) {
@@ -135,8 +123,6 @@ public class SecondActivity extends AppCompatActivity {
         replyIntent.putExtra(EXTRA_REPLY, reply7);
         setResult(RESULT_OK,replyIntent);
         finish();
-
-
 
           }
 
