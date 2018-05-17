@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         m20 = (TextView) findViewById(R.id.textView20);
 
         if (savedInstanceState != null) {
+
             boolean isVisible = savedInstanceState.getBoolean("reply_visible");
             if (isVisible) {
 
@@ -71,74 +72,56 @@ public class MainActivity extends AppCompatActivity {
                 m2.setText(savedInstanceState.getString("reply_text2"));
                 m2.setVisibility(View.VISIBLE);
 
-
                 m3.setText(savedInstanceState.getString("reply_text3"));
                 m3.setVisibility(View.VISIBLE);
-
 
                 m4.setText(savedInstanceState.getString("reply_text4"));
                 m4.setVisibility(View.VISIBLE);
 
-
                 m5.setText(savedInstanceState.getString("reply_text5"));
                 m5.setVisibility(View.VISIBLE);
-
 
                 m6.setText(savedInstanceState.getString("reply_text6"));
                 m6.setVisibility(View.VISIBLE);
 
-
                 m7.setText(savedInstanceState.getString("reply_text7"));
                 m7.setVisibility(View.VISIBLE);
-
 
                 m8.setText(savedInstanceState.getString("reply_text8"));
                 m8.setVisibility(View.VISIBLE);
 
-
                 m9.setText(savedInstanceState.getString("reply_text9"));
                 m9.setVisibility(View.VISIBLE);
-
 
                 m10.setText(savedInstanceState.getString("reply_text10"));
                 m10.setVisibility(View.VISIBLE);
 
-
                 m11.setText(savedInstanceState.getString("reply_text11"));
                 m11.setVisibility(View.VISIBLE);
-
 
                 m12.setText(savedInstanceState.getString("reply_text12"));
                 m12.setVisibility(View.VISIBLE);
 
-
                 m13.setText(savedInstanceState.getString("reply_text13"));
                 m13.setVisibility(View.VISIBLE);
-
 
                 m14.setText(savedInstanceState.getString("reply_text14"));
                 m14.setVisibility(View.VISIBLE);
 
-
                 m15.setText(savedInstanceState.getString("reply_text15"));
                 m15.setVisibility(View.VISIBLE);
-
 
                 m16.setText(savedInstanceState.getString("reply_text16"));
                 m16.setVisibility(View.VISIBLE);
 
-
                 m17.setText(savedInstanceState.getString("reply_text17"));
                 m17.setVisibility(View.VISIBLE);
-
 
                 m18.setText(savedInstanceState.getString("reply_text18"));
                 m18.setVisibility(View.VISIBLE);
 
-
                 m19.setText(savedInstanceState.getString("reply_text19"));
                 m19.setVisibility(View.VISIBLE);
-
 
                 m20.setText(savedInstanceState.getString("reply_text20"));
                 m20.setVisibility(View.VISIBLE);
@@ -165,71 +148,85 @@ public class MainActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
 
                 if(count==1){
+
                 String reply1 = data.getStringExtra(SecondActivity.EXTRA_REPLY);
                 m1.setText(reply1);
                 }
 
                 if(count==2){
+
                     String reply2 = data.getStringExtra(SecondActivity.EXTRA_REPLY);
                     m2.setText(reply2);
                 }
 
                 if(count==3){
+
                     String reply3 = data.getStringExtra(SecondActivity.EXTRA_REPLY);
                     m3.setText(reply3);
                 }
 
                 if(count==4){
+
                     String reply4 = data.getStringExtra(SecondActivity.EXTRA_REPLY);
                     m4.setText(reply4);
                 }
 
                 if(count==5){
+
                     String reply5 = data.getStringExtra(SecondActivity.EXTRA_REPLY);
                     m5.setText(reply5);
                 }
 
                 if(count==6){
+
                     String reply6 = data.getStringExtra(SecondActivity.EXTRA_REPLY);
                     m6.setText(reply6);
                 }
 
                 if(count==7){
+
                     String reply7 = data.getStringExtra(SecondActivity.EXTRA_REPLY);
                     m7.setText(reply7);
                 }
 
                 if(count==8){
+
                     String reply8 = data.getStringExtra(SecondActivity.EXTRA_REPLY);
                     m8.setText(reply8);
                 }
 
                 if(count==9){
+
                     String reply9 = data.getStringExtra(SecondActivity.EXTRA_REPLY);
                     m9.setText(reply9);
                 }
 
                 if(count==10){
+
                     String reply10 = data.getStringExtra(SecondActivity.EXTRA_REPLY);
                     m10.setText(reply10);
                 }
 
                 if(count==11){
+
                     String reply11 = data.getStringExtra(SecondActivity.EXTRA_REPLY);
                     m11.setText(reply11);
                 }
 
                 if(count==12){
+
                     String reply12 = data.getStringExtra(SecondActivity.EXTRA_REPLY);
                     m12.setText(reply12);
                 }
 
                 if(count==13){
+
                     String reply13 = data.getStringExtra(SecondActivity.EXTRA_REPLY);
                     m13.setText(reply13);
                 }
 
                 if(count==14){
+
                     String reply14 = data.getStringExtra(SecondActivity.EXTRA_REPLY);
                     m14.setText(reply14);
                 }
@@ -240,26 +237,31 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if(count==16){
+
                     String reply16 = data.getStringExtra(SecondActivity.EXTRA_REPLY);
                     m16.setText(reply16);
                 }
 
                 if(count==17){
+
                     String reply17 = data.getStringExtra(SecondActivity.EXTRA_REPLY);
                     m17.setText(reply17);
                 }
 
                 if(count==18){
+
                     String reply18 = data.getStringExtra(SecondActivity.EXTRA_REPLY);
                     m18.setText(reply18);
                 }
 
                 if(count==19){
+
                     String reply19 = data.getStringExtra(SecondActivity.EXTRA_REPLY);
                     m19.setText(reply19);
                 }
 
                 if(count==20){
+
                     String reply20 = data.getStringExtra(SecondActivity.EXTRA_REPLY);
                    m20.setText(reply20);
                 }
@@ -273,6 +275,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
+
         outState.putBoolean("reply_visible", true);
         outState.putString("reply_text1", m1.getText().toString());
         outState.putString("reply_text2", m2.getText().toString());

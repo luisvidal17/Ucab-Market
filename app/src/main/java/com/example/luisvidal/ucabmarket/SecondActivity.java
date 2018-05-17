@@ -44,6 +44,7 @@ public class SecondActivity extends AppCompatActivity {
 
 
 
+
         c_arroz = (TextView) findViewById(R.id.arroz);
         c_pasta = (TextView) findViewById(R.id.pasta);
         c_leche = (TextView) findViewById(R.id.leche);
@@ -65,6 +66,7 @@ public class SecondActivity extends AppCompatActivity {
         c_queso = (TextView) findViewById(R.id.queso);
         c_vino= (TextView) findViewById(R.id.vino);
 
+
     }
 
 
@@ -75,6 +77,7 @@ public class SecondActivity extends AppCompatActivity {
         setResult(RESULT_OK,replyIntent);
         finish();
 
+
     }
 
     public void click_pasta(View view) {
@@ -83,6 +86,7 @@ public class SecondActivity extends AppCompatActivity {
         replyIntent.putExtra(EXTRA_REPLY, reply2);
         setResult(RESULT_OK,replyIntent);
         finish();
+
     }
 
     public void click_leche(View view) {
@@ -91,6 +95,7 @@ public class SecondActivity extends AppCompatActivity {
         replyIntent.putExtra(EXTRA_REPLY, reply3);
         setResult(RESULT_OK,replyIntent);
         finish();
+
 
     }
 
@@ -101,6 +106,7 @@ public class SecondActivity extends AppCompatActivity {
         setResult(RESULT_OK,replyIntent);
         finish();
 
+
     }
 
     public void click_agua(View view) {
@@ -110,6 +116,7 @@ public class SecondActivity extends AppCompatActivity {
         setResult(RESULT_OK,replyIntent);
         finish();
 
+
     }
 
     public void click_caraota(View view) {
@@ -118,6 +125,7 @@ public class SecondActivity extends AppCompatActivity {
         replyIntent.putExtra(EXTRA_REPLY, reply6);
         setResult(RESULT_OK,replyIntent);
         finish();
+
 
     }
 
@@ -129,6 +137,7 @@ public class SecondActivity extends AppCompatActivity {
         finish();
 
 
+
           }
 
     public void click_harina(View view) {
@@ -137,6 +146,7 @@ public class SecondActivity extends AppCompatActivity {
         replyIntent.putExtra(EXTRA_REPLY, reply8);
         setResult(RESULT_OK,replyIntent);
         finish();
+
       }
 
     public void click_pollo(View view) {
@@ -145,6 +155,7 @@ public class SecondActivity extends AppCompatActivity {
         replyIntent.putExtra(EXTRA_REPLY, reply9);
         setResult(RESULT_OK,replyIntent);
         finish();
+
        }
 
     public void click_ace(View view) {
@@ -153,6 +164,7 @@ public class SecondActivity extends AppCompatActivity {
         replyIntent.putExtra(EXTRA_REPLY, reply10);
         setResult(RESULT_OK,replyIntent);
         finish();
+
         }
 
     public void click_pan(View view) {
@@ -161,6 +173,7 @@ public class SecondActivity extends AppCompatActivity {
         replyIntent.putExtra(EXTRA_REPLY, reply11);
         setResult(RESULT_OK,replyIntent);
         finish();
+
       }
 
     public void click_sal(View view) {
@@ -169,6 +182,7 @@ public class SecondActivity extends AppCompatActivity {
         replyIntent.putExtra(EXTRA_REPLY, reply12);
         setResult(RESULT_OK,replyIntent);
         finish();
+
         }
 
     public void click_azucar(View view) {
@@ -177,6 +191,7 @@ public class SecondActivity extends AppCompatActivity {
         replyIntent.putExtra(EXTRA_REPLY, reply13);
         setResult(RESULT_OK,replyIntent);
         finish();
+
         }
 
     public void click_pescado(View view) {
@@ -185,6 +200,7 @@ public class SecondActivity extends AppCompatActivity {
         replyIntent.putExtra(EXTRA_REPLY, reply14);
         setResult(RESULT_OK,replyIntent);
         finish();
+
         }
 
     public void click_jamon(View view) {
@@ -193,6 +209,7 @@ public class SecondActivity extends AppCompatActivity {
         replyIntent.putExtra(EXTRA_REPLY, reply15);
         setResult(RESULT_OK,replyIntent);
         finish();
+
       }
 
     public void click_lenteja(View view) {
@@ -201,6 +218,7 @@ public class SecondActivity extends AppCompatActivity {
         replyIntent.putExtra(EXTRA_REPLY, reply16);
         setResult(RESULT_OK,replyIntent);
         finish();
+
         }
 
     public void click_mostaza(View view) {
@@ -209,6 +227,7 @@ public class SecondActivity extends AppCompatActivity {
         replyIntent.putExtra(EXTRA_REPLY, reply17);
         setResult(RESULT_OK,replyIntent);
         finish();
+
        }
 
     public void click_carne(View view) {
@@ -217,6 +236,7 @@ public class SecondActivity extends AppCompatActivity {
         replyIntent.putExtra(EXTRA_REPLY, reply18);
         setResult(RESULT_OK,replyIntent);
         finish();
+
         }
 
     public void click_queso(View view) {
@@ -225,6 +245,7 @@ public class SecondActivity extends AppCompatActivity {
         replyIntent.putExtra(EXTRA_REPLY, reply19);
         setResult(RESULT_OK,replyIntent);
         finish();
+
        }
 
     public void click_vino(View view) {
@@ -233,6 +254,7 @@ public class SecondActivity extends AppCompatActivity {
         replyIntent.putExtra(EXTRA_REPLY, reply20);
         setResult(RESULT_OK,replyIntent);
         finish();
+
        }
 
 
