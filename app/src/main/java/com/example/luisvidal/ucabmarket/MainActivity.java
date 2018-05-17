@@ -61,6 +61,92 @@ public class MainActivity extends AppCompatActivity {
         m19 = (TextView) findViewById(R.id.textView19);
         m20 = (TextView) findViewById(R.id.textView20);
 
+        if (savedInstanceState != null) {
+            boolean isVisible = savedInstanceState.getBoolean("reply_visible");
+            if (isVisible) {
+
+                m1.setText(savedInstanceState.getString("reply_text1"));
+                m1.setVisibility(View.VISIBLE);
+
+                m2.setText(savedInstanceState.getString("reply_text2"));
+                m2.setVisibility(View.VISIBLE);
+
+
+                m3.setText(savedInstanceState.getString("reply_text3"));
+                m3.setVisibility(View.VISIBLE);
+
+
+                m4.setText(savedInstanceState.getString("reply_text4"));
+                m4.setVisibility(View.VISIBLE);
+
+
+                m5.setText(savedInstanceState.getString("reply_text5"));
+                m5.setVisibility(View.VISIBLE);
+
+
+                m6.setText(savedInstanceState.getString("reply_text6"));
+                m6.setVisibility(View.VISIBLE);
+
+
+                m7.setText(savedInstanceState.getString("reply_text7"));
+                m7.setVisibility(View.VISIBLE);
+
+
+                m8.setText(savedInstanceState.getString("reply_text8"));
+                m8.setVisibility(View.VISIBLE);
+
+
+                m9.setText(savedInstanceState.getString("reply_text9"));
+                m9.setVisibility(View.VISIBLE);
+
+
+                m10.setText(savedInstanceState.getString("reply_text10"));
+                m10.setVisibility(View.VISIBLE);
+
+
+                m11.setText(savedInstanceState.getString("reply_text11"));
+                m11.setVisibility(View.VISIBLE);
+
+
+                m12.setText(savedInstanceState.getString("reply_text12"));
+                m12.setVisibility(View.VISIBLE);
+
+
+                m13.setText(savedInstanceState.getString("reply_text13"));
+                m13.setVisibility(View.VISIBLE);
+
+
+                m14.setText(savedInstanceState.getString("reply_text14"));
+                m14.setVisibility(View.VISIBLE);
+
+
+                m15.setText(savedInstanceState.getString("reply_text15"));
+                m15.setVisibility(View.VISIBLE);
+
+
+                m16.setText(savedInstanceState.getString("reply_text16"));
+                m16.setVisibility(View.VISIBLE);
+
+
+                m17.setText(savedInstanceState.getString("reply_text17"));
+                m17.setVisibility(View.VISIBLE);
+
+
+                m18.setText(savedInstanceState.getString("reply_text18"));
+                m18.setVisibility(View.VISIBLE);
+
+
+                m19.setText(savedInstanceState.getString("reply_text19"));
+                m19.setVisibility(View.VISIBLE);
+
+
+                m20.setText(savedInstanceState.getString("reply_text20"));
+                m20.setVisibility(View.VISIBLE);
+
+
+            }
+        }
+
 
     }
 
@@ -175,7 +261,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if(count==20){
                     String reply20 = data.getStringExtra(SecondActivity.EXTRA_REPLY);
-                    m20.setText(reply20);
+                   m20.setText(reply20);
                 }
 
 
@@ -184,6 +270,35 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
+    @Override public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putBoolean("reply_visible", true);
+        outState.putString("reply_text1", m1.getText().toString());
+        outState.putString("reply_text2", m2.getText().toString());
+        outState.putString("reply_text3", m3.getText().toString());
+        outState.putString("reply_text4", m4.getText().toString());
+        outState.putString("reply_text5", m5.getText().toString());
+        outState.putString("reply_text6", m6.getText().toString());
+        outState.putString("reply_text7", m7.getText().toString());
+        outState.putString("reply_text8", m8.getText().toString());
+        outState.putString("reply_text9", m9.getText().toString());
+        outState.putString("reply_text10", m10.getText().toString());
+        outState.putString("reply_text11", m11.getText().toString());
+        outState.putString("reply_text12", m12.getText().toString());
+        outState.putString("reply_text13", m13.getText().toString());
+        outState.putString("reply_text14", m14.getText().toString());
+        outState.putString("reply_text15", m15.getText().toString());
+        outState.putString("reply_text16", m16.getText().toString());
+        outState.putString("reply_text17", m17.getText().toString());
+        outState.putString("reply_text18", m18.getText().toString());
+        outState.putString("reply_text19", m19.getText().toString());
+        outState.putString("reply_text20", m20.getText().toString());
+
+
+
+
+    }
 
 
 }
