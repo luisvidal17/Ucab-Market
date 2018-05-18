@@ -7,165 +7,438 @@
     tools:context=".SecondActivity">
 
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:text="Arroz" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/button4"
-        android:text="Pasta" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/button5"
-        android:text="Leche" />
 
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/button6"
-        android:text="Jugo" />
+        <Button
+            android:id="@+id/comprar_arroz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/arroz"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="click_arroz"
+            android:text="@string/comprar_arroz" />
 
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/button7"
-        android:text="Agua" />
+        <TextView
+            android:id="@+id/arroz"
+            android:layout_width="86dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/arroz"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="italic" />
 
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/button8"
-        android:text="Caraota" />
+        <Button
+            android:id="@+id/comprar_pasta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/comprar_arroz"
+            android:layout_below="@+id/comprar_arroz"
+            android:background="@android:color/holo_orange_dark"
+            android:onClick="click_pasta"
+            android:text="@string/comprar_pasta" />
 
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/button9"
-        android:text="mantequilla" />
+        <TextView
+            android:id="@+id/pasta"
+            android:layout_width="85dp"
+            android:layout_height="47dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/comprar_arroz"
+            android:text="@string/pasta"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="italic" />
 
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/button10"
-        android:text="ace" />
+        <Button
+            android:id="@+id/comprar_leche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/comprar_arroz"
+            android:layout_below="@+id/comprar_pasta"
+            android:background="@android:color/holo_red_light"
+            android:onClick="click_leche"
+            android:text="@string/comprar_leche" />
 
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/button11"
-        android:text="Pollo" />
+        <TextView
+            android:id="@+id/leche"
+            android:layout_width="85dp"
+            android:layout_height="46dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/comprar_pasta"
+            android:text="@string/leche"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="italic" />
 
-    <Button
-        android:id="@+id/button13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/button12"
-        android:text="Carne" />
+        <Button
+            android:id="@+id/comprar_jugo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/comprar_arroz"
+            android:layout_below="@+id/comprar_leche"
+            android:background="@android:color/holo_purple"
+            android:onClick="click_jugo"
+            android:text="@string/comprar_jugo" />
 
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="134dp"
-        android:text="Pescado" />
+        <TextView
+            android:id="@+id/jugo"
+            android:layout_width="86dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/comprar_leche"
+            android:text="@string/jugo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_purple"
+            android:textStyle="italic" />
 
-    <Button
-        android:id="@+id/button15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button14"
-        android:layout_below="@+id/button4"
-        android:text="Sal" />
+        <Button
+            android:id="@+id/comprar_agua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/comprar_arroz"
+            android:layout_below="@+id/comprar_jugo"
+            android:background="@android:color/holo_green_light"
+            android:onClick="click_agua"
+            android:text="@string/comprar_agua" />
 
-    <Button
-        android:id="@+id/button16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button14"
-        android:layout_below="@+id/button5"
-        android:text="Azucar" />
+        <TextView
+            android:id="@+id/agua"
+            android:layout_width="85dp"
+            android:layout_height="46dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/comprar_jugo"
+            android:text="@string/agua"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_green_light"
+            android:textStyle="italic" />
 
-    <Button
-        android:id="@+id/button17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button14"
-        android:layout_below="@+id/button6"
-        android:text="Pan" />
+        <Button
+            android:id="@+id/comprar_caraota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/comprar_arroz"
+            android:layout_below="@+id/comprar_agua"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="click_caraota"
+            android:text="@string/comprar_caraota" />
 
-    <Button
-        android:id="@+id/button18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button14"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="199dp"
-        android:text="Jamon" />
+        <TextView
+            android:id="@+id/caraota"
+            android:layout_width="86dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/comprar_agua"
+            android:text="@string/caraota"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="italic" />
 
-    <Button
-        android:id="@+id/button19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button14"
-        android:layout_below="@+id/button18"
-        android:text="Queso" />
+        <Button
+            android:id="@+id/comprar_ajo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/comprar_arroz"
+            android:layout_below="@+id/comprar_caraota"
+            android:background="@android:color/holo_blue_bright"
+            android:onClick="click_ajo"
+            android:text="@string/comprar_ajo" />
 
-    <Button
-        android:id="@+id/button20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button14"
-        android:layout_below="@+id/button9"
-        android:text="Lenteja" />
+        <TextView
+            android:id="@+id/ajo"
+            android:layout_width="85dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/comprar_caraota"
+            android:text="@string/ajo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textStyle="italic" />
 
-    <Button
-        android:id="@+id/button21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button14"
-        android:layout_below="@+id/button10"
-        android:text="mostaza" />
+        <Button
+            android:id="@+id/comprar_harina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/comprar_arroz"
+            android:layout_below="@+id/comprar_ajo"
+            android:background="@android:color/darker_gray"
+            android:onClick="click_harina"
+            android:text="@string/comprar_harina" />
 
-    <Button
-        android:id="@+id/button22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button14"
-        android:layout_below="@+id/button11"
-        android:text="mayonesa" />
+        <TextView
+            android:id="@+id/ace"
+            android:layout_width="86dp"
+            android:layout_height="43dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="128dp"
+            android:text="@string/ace"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="italic" />
 
-    <Button
-        android:id="@+id/button23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button14"
-        android:layout_below="@+id/button12"
-        android:text="Harina" />
+        <Button
+            android:id="@+id/comprar_pollo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/comprar_arroz"
+            android:layout_below="@+id/comprar_harina"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="click_pollo"
+            android:text="@string/comprar_pollo" />
+
+        <TextView
+            android:id="@+id/pollo"
+            android:layout_width="86dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/comprar_harina"
+            android:text="@string/pollo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_blue_light"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/comprar_ace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/comprar_arroz"
+            android:layout_below="@+id/comprar_pollo"
+            android:background="@android:color/holo_orange_dark"
+            android:onClick="click_ace"
+            android:text="@string/comprar_ace" />
+
+        <TextView
+            android:id="@+id/carne"
+            android:layout_width="85dp"
+            android:layout_height="43dp"
+            android:layout_alignStart="@+id/pescado"
+            android:layout_below="@+id/comprar_pollo"
+            android:text="@string/carne"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/pescado"
+            android:layout_width="81dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="89dp"
+            android:text="@string/pescado"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/comprar_pan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/comprar_leche"
+            android:background="@android:color/darker_gray"
+            android:onClick="click_pan"
+            android:text="@string/comprar_pan" />
+
+        <Button
+            android:id="@+id/comprar_sal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/comprar_arroz"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="click_sal"
+            android:text="@string/comprar_sal" />
+
+        <TextView
+            android:id="@+id/sal"
+            android:layout_width="81dp"
+            android:layout_height="45dp"
+            android:layout_alignEnd="@+id/pescado"
+            android:layout_below="@+id/comprar_arroz"
+            android:text="@string/sal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/comprar_azucar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/comprar_pasta"
+            android:background="@android:color/holo_blue_bright"
+            android:onClick="click_azucar"
+            android:text="@string/comprar_azucar" />
+
+        <TextView
+            android:id="@+id/azucar"
+            android:layout_width="81dp"
+            android:layout_height="44dp"
+            android:layout_alignEnd="@+id/pescado"
+            android:layout_below="@+id/comprar_pasta"
+            android:text="@string/azucar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/comprar_pescado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/holo_green_dark"
+            android:onClick="click_pescado"
+            android:text="@string/comprar_pescado" />
+
+        <TextView
+            android:id="@+id/pan"
+            android:layout_width="83dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/pescado"
+            android:layout_below="@+id/comprar_leche"
+            android:text="@string/pan"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/comprar_jamon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/comprar_jugo"
+            android:background="@android:color/holo_blue_light"
+            android:onClick="click_jamon"
+            android:text="@string/comprar_jamon" />
+
+        <TextView
+            android:id="@+id/jamon"
+            android:layout_width="82dp"
+            android:layout_height="47dp"
+            android:layout_alignBottom="@+id/comprar_agua"
+            android:layout_alignStart="@+id/pescado"
+            android:text="@string/jamon"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_blue_light"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/comprar_lenteja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/comprar_harina"
+            android:background="@android:color/holo_green_dark"
+            android:onClick="click_lenteja"
+            android:text="@string/comprar_lenteja" />
+
+        <TextView
+            android:id="@+id/queso"
+            android:layout_width="83dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/pescado"
+            android:layout_below="@+id/agua"
+            android:text="@string/queso"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/comprar_mostaza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/comprar_ajo"
+            android:background="@android:color/holo_purple"
+            android:onClick="click_mostaza"
+            android:text="@string/comprar_mostaza" />
+
+        <TextView
+            android:id="@+id/lenteja"
+            android:layout_width="81dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/carne"
+            android:layout_below="@+id/comprar_harina"
+            android:text="@string/lenteja"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_green_light"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/comprar_carne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/holo_red_dark"
+            android:onClick="click_carne"
+            android:text="@string/comprar_carne" />
+
+        <TextView
+            android:id="@+id/mostaza"
+            android:layout_width="83dp"
+            android:layout_height="44dp"
+            android:layout_alignBottom="@+id/comprar_harina"
+            android:layout_alignStart="@+id/pescado"
+            android:text="@string/mostaza"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_purple"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/comprar_queso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/comprar_agua"
+            android:background="@android:color/holo_orange_dark"
+            android:onClick="click_queso"
+            android:text="@string/comprar_queso" />
+
+        <TextView
+            android:id="@+id/vino"
+            android:layout_width="81dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/pescado"
+            android:layout_below="@+id/comprar_caraota"
+            android:text="@string/vino"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/comprar_vino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/comprar_caraota"
+            android:background="@android:color/holo_red_light"
+            android:onClick="click_vino"
+            android:text="@string/comprar_vino" />
+
+        <TextView
+            android:id="@+id/harina"
+            android:layout_width="80dp"
+            android:layout_height="42dp"
+            android:layout_alignBottom="@+id/comprar_harina"
+            android:layout_alignParentStart="true"
+            android:text="@string/harina"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+</ScrollView>
+
 </RelativeLayout>
