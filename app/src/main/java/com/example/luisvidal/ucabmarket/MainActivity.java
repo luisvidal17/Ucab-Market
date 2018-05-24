@@ -1,5 +1,9 @@
 package com.example.luisvidal.ucabmarket;
 
+/** @author Luis V. Boada
+ *
+ */
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +13,7 @@ import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
+
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
     public static final int TEXT_REQUEST = 1;
     int count = 1;
@@ -62,10 +67,26 @@ public class MainActivity extends AppCompatActivity {
         m19 = (TextView) findViewById(R.id.textView19);
         m20 = (TextView) findViewById(R.id.textView20);
 
+        /** @param textView1,2,3,4.....  id de los textv
+         *  @return valor del textview
+         *
+         */
+
 
         if (savedInstanceState != null) {
+            /** @throws savedInstanceState
+             * si  savedInstanceState es distinto de null se guardo algun estado de la app
+             *
+             */
 
             boolean isVisible = savedInstanceState.getBoolean("reply_visible");
+            /** @param key:"reply_visible"
+             *             este parametro es una clave que viene del metodo outState.putBoolean
+             *             si es verdadero
+             *  @return si es visible en el bundle
+             */
+
+
             if (isVisible) {
 
                 m1.setText(savedInstanceState.getString("reply_text1"));
@@ -128,7 +149,21 @@ public class MainActivity extends AppCompatActivity {
                 m20.setText(savedInstanceState.getString("reply_text20"));
                 m20.setVisibility(View.VISIBLE);
 
+                /** @param key:"reply_text1,2,3,4......"
+                 *             este parametro es una clave que viene del metodo outState.putString,
+                 *            en esta clave esta guardada el texto en string guardado en el estado de la app
+                 *
+                 *  @return devuelve el texto guardado en el estado anterior de la app
+                 */
+
                 count= savedInstanceState.getInt("contador");
+
+                /** @param key:"contador"
+                 *             este parametro es una clave que viene del metodo outState.putInt,
+                 *            en esta clave esta guardada el valor de contador en el estado anterior
+                 *
+                 *  @return devuelve el valor del contador del estado anterior
+                 */
 
             }
         }
@@ -137,18 +172,36 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void launchSecondActivity(View view) {
+        /** @param View_View  la vista de la segunda actividad
+         */
+
         Log.d (LOG_TAG, "Button clicked!");
         Intent intent = new Intent (this, SecondActivity.class);
         startActivityForResult(intent, TEXT_REQUEST);
 
+        /** @param intent   el intent al precionar el boton agregar acticulo
+         *  @return abrir la segunda actividad
+         *
+         */
+
     }
 
     public void onActivityResult(int requestCode, int resultCode,Intent data) {
+
+        /** @param requestCode para verificar si se realizo el intent
+         *  @param resultCodde verificacion de que se presiono el boton comprar de la segunda actividad
+         *
+         */
         super.onActivityResult(requestCode, resultCode, data);
 
 
         if (requestCode == TEXT_REQUEST) {
+            /** @throws requestCode es igual a TEXT_REQUEST se realizo el intent
+             */
+
             if (resultCode == RESULT_OK) {
+                /** @throws resultCode es igual a TEXT_OK se presiono el boton comprar en la segunda actividad
+                 */
 
 
 
@@ -268,9 +321,14 @@ public class MainActivity extends AppCompatActivity {
                 if(count==20){
 
                     String reply20 = data.getStringExtra(SecondActivity.EXTRA_REPLY);
+                    /** @param SecondActivity.EXTRA_REPLY le pasa el contenido del textview
+                     *   @return obtiene el valor en string del textview
+                     */
                    m20.setText(reply20);
+                    /** @param reply20 es el valor string de lo que esta en el textview, PASA LO MISMO PARA TODOS LOS VALORES DE COUNT
+                     *  @return pone el texto obtenido , PASA LO MISMO PARA LOS VALORES DE
+                     */
                 }
-
 
                 count = count + 1;
             }
@@ -279,9 +337,22 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override public void onSaveInstanceState(Bundle outState) {
+
+        /**
+         *  @return los estados guardados
+         */
         super.onSaveInstanceState(outState);
 
+        /**
+         *  @param outState los estados de salida
+         */
+
         outState.putBoolean("reply_visible", true);
+        /**
+         *  @param true  clave donde se va a guardar si el resultado es verdadero
+         */
+
+
         outState.putString("reply_text1", m1.getText().toString());
         outState.putString("reply_text2", m2.getText().toString());
         outState.putString("reply_text3", m3.getText().toString());
@@ -302,13 +373,16 @@ public class MainActivity extends AppCompatActivity {
         outState.putString("reply_text18", m18.getText().toString());
         outState.putString("reply_text19", m19.getText().toString());
         outState.putString("reply_text20", m20.getText().toString());
+        /**
+         *  @param "reply_text" clave donde se va a guardar el valor
+         *  @return guarda el estado del string en el textview
+         */
+
         outState.putInt("contador" ,count);
-
-
-
-
-
-
+        /**
+         *  @param count el valor del contador
+         *  @return guarda el valor del contador
+         */
 
     }
 
