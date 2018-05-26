@@ -1,8 +1,6 @@
 package com.example.luisvidal.ucabmarket;
 
-/** @author Luis V. Boada
- *
- */
+
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +9,9 @@ import android.view.View;
 import android.widget.TextView;
 
 
+/** Esta clase define los articulos ofrecidos para comprar
+ *  @author Luis V. Boada
+ */
 public class SecondActivity extends AppCompatActivity {
     public static final String EXTRA_REPLY = "com.example.luisvidal.twoactivities.extra.REPLY";
 
@@ -63,15 +64,14 @@ public class SecondActivity extends AppCompatActivity {
         c_queso = (TextView) findViewById(R.id.queso);
         c_vino= (TextView) findViewById(R.id.vino);
 
-        /**
-         *  @param arroz id de los textview de los productos (LO MISMO PARA LOS DEMAS CASOS)
-         *  @return el vAlor del textview (LO MISMO PARA TODOS LOS CASOS)
-         */
-
-
-
     }
 
+    /** Este metodo regresa a la primera actividad guardando el articulo que se compro
+     *  @param view la vista
+     *  @return la vista de la primera actividad guardando el producto que se compro en formmato string
+     *
+     *  SE REPITE LO MISMO PARA LOS DEMAS CASOS
+     */
 
     public void click_arroz(View view) {
         String reply1 = c_arroz.getText().toString();
@@ -251,19 +251,7 @@ public class SecondActivity extends AppCompatActivity {
         replyIntent.putExtra(EXTRA_REPLY, reply20);
         setResult(RESULT_OK,replyIntent);
         finish();
-        /**
-         *  @param c_vino donde esta guardado el valor en string del texview
-         *  @param EXTRA_REPLY donde se va a guardar el extra del valor de textview
-         *  @param RESULT_OK donde se va a guardar el resultado del intent
-         *
-         *         (LOS MISMO PARA TODOS LOS BOTONES)
-         *
-         */
 
        }
-
-
-
-
 
 }
