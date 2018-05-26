@@ -1,5 +1,7 @@
 package com.example.luisvidal.ucabmarket;
 
+
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +9,9 @@ import android.view.View;
 import android.widget.TextView;
 
 
+/** Esta clase define los articulos ofrecidos para comprar
+ *  @author Luis V. Boada
+ */
 public class SecondActivity extends AppCompatActivity {
     public static final String EXTRA_REPLY = "com.example.luisvidal.twoactivities.extra.REPLY";
 
@@ -61,6 +66,12 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+    /** Este metodo regresa a la primera actividad guardando el articulo que se compro
+     *  @param view la vista
+     *  @return la vista de la primera actividad guardando el producto que se compro en formmato string
+     *
+     *  SE REPITE LO MISMO PARA LOS DEMAS CASOS
+     */
 
     public void click_arroz(View view) {
         String reply1 = c_arroz.getText().toString();
@@ -242,8 +253,5 @@ public class SecondActivity extends AppCompatActivity {
         finish();
 
        }
-
-
-
 
 }

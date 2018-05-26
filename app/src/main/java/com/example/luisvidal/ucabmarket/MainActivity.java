@@ -1,5 +1,7 @@
 package com.example.luisvidal.ucabmarket;
 
+
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,8 +9,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+/** Esta clase define los textiew donde van a estar los articulos comprados
+ *  @author Luis V. Boada
+ */
 
 public class MainActivity extends AppCompatActivity {
+
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
     public static final int TEXT_REQUEST = 1;
     int count = 1;
@@ -66,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState != null) {
 
             boolean isVisible = savedInstanceState.getBoolean("reply_visible");
+
             if (isVisible) {
 
                 m1.setText(savedInstanceState.getString("reply_text1"));
@@ -135,22 +142,34 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /** Metodo que define la vista de la segunda actividad, donde estan los articulos ofrecidos
+     * para comprar al presionar el boton agregar articulos
+     *
+     * @param view la vista
+     * @return La vista de la actividad
+     */
 
     public void launchSecondActivity(View view) {
         Log.d (LOG_TAG, "Button clicked!");
         Intent intent = new Intent (this, SecondActivity.class);
         startActivityForResult(intent, TEXT_REQUEST);
-
     }
 
-    public void onActivityResult(int requestCode, int resultCode,Intent data) {
+
+    /** Este metodo define que hacer al recibir un resultado de la segunda actividad
+     *  @param requestCode para verificar si se realizo el intent
+     *  @param resultCode verificacion de que se presiono el boton comprar de la segunda actividad
+     *  @param data donde esta guardado el valor del producto que se compro
+     *  @return el articulo que se compro , lo agrega en la lista de articulos comprados
+     */
+
+    public void onActivityResult(int requestCode, int resultCode,Intent data){
         super.onActivityResult(requestCode, resultCode, data);
 
-
         if (requestCode == TEXT_REQUEST) {
+
+
             if (resultCode == RESULT_OK) {
-
-
 
                 if(count==1){
 
@@ -268,9 +287,8 @@ public class MainActivity extends AppCompatActivity {
                 if(count==20){
 
                     String reply20 = data.getStringExtra(SecondActivity.EXTRA_REPLY);
-                   m20.setText(reply20);
+                    m20.setText(reply20);
                 }
-
 
                 count = count + 1;
             }
@@ -282,6 +300,7 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
 
         outState.putBoolean("reply_visible", true);
+
         outState.putString("reply_text1", m1.getText().toString());
         outState.putString("reply_text2", m2.getText().toString());
         outState.putString("reply_text3", m3.getText().toString());
@@ -302,14 +321,8 @@ public class MainActivity extends AppCompatActivity {
         outState.putString("reply_text18", m18.getText().toString());
         outState.putString("reply_text19", m19.getText().toString());
         outState.putString("reply_text20", m20.getText().toString());
+
         outState.putInt("contador" ,count);
-
-
-
-
-
-
-
     }
 
 
